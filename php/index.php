@@ -3,47 +3,32 @@
 class Client {
     public $name;
     public $sub_name;
+
+    function __construct($name, $sub_name) {
+        $this->name = $name;
+        $this->sub_name = $sub_name;
+    }
 };
 
-$client_1 = new Client();
-$client_1->name = "Darth";
-$client_1->sub_name = "Vader";
+$client_1 = new Client("Darth", "Vader");
 
-$client_2 = new Client();
-$client_2->name = "Kurt";
-$client_2->sub_name = "Cobain";
+$client_2 = new Client("Kurt", "Cobain");
 
-$client_3 = new Client();
-$client_3->name = "Chester";
-$client_3->sub_name = "Bennington";
+$client_3 = new Client("Chester", "Bennington");
 
-$client_4 = new Client();
-$client_4->name = "Axl";
-$client_4->sub_name = "Rose"; 
+$client_4 = new Client("Axl", "Rose");
 
-$client_5 = new Client();
-$client_5->name = "Avril";
-$client_5->sub_name = "Lavigne";
+$client_5 = new Client("Avril","Lavigne");
 
-$client_6 = new Client();
-$client_6->name = "Rick";
-$client_6->sub_name = "Sanches";
+$client_6 = new Client("Rick", "Sanches");
 
-$client_7 = new Client();
-$client_7->name = "Jack";
-$client_7->sub_name = "Sparrow";
+$client_7 = new Client("Jack", "Sparrow");
 
-$client_8 = new Client();
-$client_8->name = "Harry";
-$client_8->sub_name = "Potter";
+$client_8 = new Client("Harry", "Potter");
 
-$client_9 = new Client();
-$client_9->name = "Tony";
-$client_9->sub_name = "Stark";
+$client_9 = new Client("Tony", "Stark");
 
-$client_10 = new Client();
-$client_10->name = "Steve";
-$client_10->sub_name = "Rogers";
+$client_10 = new Client("Steve", "Rogers");
 
 $clients_list = [
     $client_1,
